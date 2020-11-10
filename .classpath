@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jre">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/Stevoski/eclipse-workspace/inventoryManagement/src/inventoryManager/commons-codec-1.15.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Stevoski/Documents/steve/Jars/controlsfx-11.0.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Stevoski/Documents/steve/Jars/javafx-base-11.0.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Stevoski/Documents/steve/Jars/javafx-base-11.0.2-linux.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Stevoski/Documents/steve/Jars/javafx-controls-11.0.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Stevoski/Documents/steve/Jars/javafx-controls-11.0.2-linux.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Stevoski/Documents/steve/Jars/javafx-graphics-11.0.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Stevoski/Documents/steve/Jars/javafx-graphics-11.0.2-linux.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Stevoski/Documents/steve/Jars/javafx-media-11.0.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Stevoski/Documents/steve/Jars/javafx-media-11.0.2-linux.jar"/>
+	<classpathentry kind="con" path="org.eclipse.fx.ide.jdt.core.JAVAFX_CONTAINER"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/JavaFX11"/>
+	<classpathentry kind="lib" path="C:/Users/Stevoski/Documents/steve/Jars/jfoenix-9.0.8.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Stevoski/Documents/steve/Jars/jgoodies-forms-1.8.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Stevoski/Documents/steve/Jars/jgoodies-forms-1.8.0-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Stevoski/Documents/steve/Jars/miglayout15-swing.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Stevoski/Documents/steve/Jars/jcalendar-1.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Stevoski/Documents/steve/Jars/jasperreports-applet-4.7.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Stevoski/Documents/steve/Jars/jasperreports-fonts-4.7.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Stevoski/Documents/steve/Jars/jasperreports-javaflow-4.7.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Stevoski/Documents/steve/Jars/jasperreports-4.7.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Stevoski/Documents/steve/Jars/groovy-all-1.7.5.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Stevoski/Documents/steve/Jars/jfreechart-1.0.12.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Stevoski/Documents/steve/Jars/jdt-compiler-3.1.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Stevoski/Documents/steve/Jars/commons-beanutils-1.8.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Stevoski/Documents/steve/Jars/commons-logging-1.1.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Stevoski/Documents/steve/Jars/iText-2.1.7.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Stevoski/Documents/steve/Jars/commons-collections-2.1.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Stevoski/Documents/steve/Jars/jcommon-1.0.15.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Stevoski/Documents/steve/Jars/commons-digester-2.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Stevoski/Documents/steve/Jars/mysql-connector-java-8.0.11.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

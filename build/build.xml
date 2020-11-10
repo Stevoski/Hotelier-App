@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<project name="inventoryManagement" default="do-deploy" basedir="."  xmlns:fx="javafx:com.sun.javafx.tools.ant">
+	<target name="init-fx-tasks">
+		<path id="fxant">
+			<filelist>
+				<file name="${java.home}\..\lib\ant-javafx.jar"/>
+				<file name="${java.home}\lib\jfxrt.jar"/>
+				<file name="${basedir}"/>
+			</filelist>
+		</path>
+	
+		<taskdef resource="com/sun/javafx/tools/ant/antlib.xml"
+			uri="javafx:com.sun.javafx.tools.ant"
+			classpathref="jfxrt.jar"/>
+	</target>
+	<target name="setup-staging-area">
+		<delete dir="externalLibs" />
+		<delete dir="project" />
+		<delete dir="projectRefs" />
+	
+		<mkdir dir="externalLibs" />
+	
+		<copy todir="externalLibs">
+			<fileset dir="C:\Program Files\Java\javafx-sdk-11.0.2\lib">
+				<filename name="javafx.web.jar"/>
+			</fileset>
+		</copy>
+		<copy todir="externalLibs">
+			<fileset dir="C:\Users\Stevoski\Documents\steve\Jars">
+				<filename name="controlsfx-11.0.3.jar"/>
+			</fileset>
+		</copy>
+		<copy todir="externalLibs">
+			<fileset dir="C:\Program Files\Java\javafx-sdk-11.0.2\lib">
+				<filename name="javafx.graphics.jar"/>
+			</fileset>
+		</copy>
+		<copy todir="externalLibs">
+			<fileset dir="C:\Users\Stevoski\Documents\steve\Jars">
+				<filename name="javafx-base-11.0.2-linux.jar"/>
+			</fileset>
+		</copy>
+		<copy todir="externalLibs">
+			<fileset dir="C:\Program Files\Java\javafx-sdk-11.0.2\lib">
+				<filename name="src.zip"/>
+			</fileset>
+		</copy>
+		<copy todir="externalLibs">
+			<fileset dir="C:\Users\Stevoski\Documents\steve\Jars">
+				<filename name="jcommon-1.0.15.jar"/>
+			</fileset>
+		</copy>
+		<copy todir="externalLibs">
+			<fileset dir="C:\Users\Stevoski\Documents\steve\Jars">
+				<filename name="jasperreports-javaflow-4.7.0.jar"/>
+			</fileset>
+		</copy>
+		<copy todir="externalLibs">
+			<fileset dir="C:\Users\Stevoski\Documents\steve\Jars">
+				<filename name="groovy-all-1.7.5.jar"/>
+			</fileset>
+		</copy>
+		<copy todir="externalLibs">
+			<fileset dir="C:\Users\Stevoski\Documents\steve\Jars">
+				<filename name="miglayout15-swing.jar"/>
+			</fileset>
+		</copy>
+		<copy todir="externalLibs">
+			<fileset dir="C:\Users\Stevoski\Documents\steve\Jars">
+				<filename name="javafx-graphics-11.0.2-linux.jar"/>
+			</fileset>
+		</copy>
+		<copy todir="externalLibs">
+			<fileset dir="C:\Users\Stevoski\Documents\steve\Jars">
+				<filename name="javafx-media-11.0.2-linux.jar"/>
+			</fileset>
+		</copy>
+		<copy todir="externalLibs">
+			<fileset dir="C:\Users\Stevoski\Documents\steve\Jars">
+				<filename name="jasperreports-applet-4.7.0.jar"/>
+			</fileset>
+		</copy>
+		<copy todir="externalLibs">
+			<fileset dir="C:\Users\Stevoski\Documents\steve\Jars">
+				<filename name="commons-logging-1.1.1.jar"/>
+			</fileset>
+		</copy>
+		<copy todir="externalLibs">
+			<fileset dir="C:\Users\Stevoski\eclipse-workspace\inventoryManagement\src\inventoryManager">
+				<filename name="commons-codec-1.15.jar"/>
+			</fileset>
+		</copy>
+		<copy todir="externalLibs">
+			<fileset dir="C:\Users\Stevoski\Documents\steve\Jars">
+				<filename name="jasperreports-4.7.0.jar"/>
+			</fileset>
+		</copy>
+		<copy todir="externalLibs">
+			<fileset dir="C:\Users\Stevoski\Documents\steve\Jars">
+				<filename name="javafx-controls-11.0.2.jar"/>
+			</fileset>
+		</copy>
+		<copy todir="externalLibs">
+			<fileset dir="C:\Program Files\Java\javafx-sdk-11.0.2\lib">
+				<filename name="javafx-swt.jar"/>
+			</fileset>
+		</copy>
+		<copy todir="externalLibs">
+			<fileset dir="C:\Users\Stevoski\Documents\steve\Jars">
+				<filename name="jfoenix-9.0.8.jar"/>
+			</fileset>
+		</copy>
+		<copy todir="externalLibs">
+			<fileset dir="C:\Users\Stevoski\Documents\steve\Jars">
+				<filename name="javafx-base-11.0.2.jar"/>
+			</fileset>
+		</copy>
+		<copy todir="externalLibs">
+			<fileset dir="C:\Program Files\Java\javafx-sdk-11.0.2\lib">
+				<filename name="javafx.swing.jar"/>
+			</fileset>
+		</copy>
+		<copy todir="externalLibs">
+			<fileset dir="C:\Users\Stevoski\Documents\steve\Jars">
+				<filename name="commons-collections-2.1.1.jar"/>
+			</fileset>
+		</copy>
+		<copy todir="externalLibs">
+			<fileset dir="C:\Users\Stevoski\Documents\steve\Jars">
+				<filename name="jgoodies-forms-1.8.0-sources.jar"/>
+			</fileset>
+		</copy>
+		<copy todir="externalLibs">
+			<fileset dir="C:\Users\Stevoski\Documents\steve\Jars">
+				<filename name="jgoodies-forms-1.8.0.jar"/>
+			</fileset>
+		</copy>
+		<copy todir="externalLibs">
+			<fileset dir="C:\Users\Stevoski\Documents\steve\Jars">
+				<filename name="jcalendar-1.4.jar"/>
+			</fileset>
+		</copy>
+		<copy todir="externalLibs">
+			<fileset dir="C:\Users\Stevoski\Documents\steve\Jars">
+				<filename name="jfreechart-1.0.12.jar"/>
+			</fileset>
+		</copy>
+		<copy todir="externalLibs">
+			<fileset dir="C:\Users\Stevoski\Documents\steve\Jars">
+				<filename name="mysql-connector-java-8.0.11.jar"/>
+			</fileset>
+		</copy>
+		<copy todir="externalLibs">
+			<fileset dir="C:\Users\Stevoski\Documents\steve\Jars">
+				<filename name="javafx-media-11.0.2.jar"/>
+			</fileset>
+		</copy>
+		<copy todir="externalLibs">
+			<fileset dir="C:\Program Files\Java\javafx-sdk-11.0.2\lib">
+				<filename name="javafx.fxml.jar"/>
+			</fileset>
+		</copy>
+		<copy todir="externalLibs">
+			<fileset dir="C:\Users\Stevoski\Documents\steve\Jars">
+				<filename name="jasperreports-fonts-4.7.0.jar"/>
+			</fileset>
+		</copy>
+		<copy todir="externalLibs">
+			<fileset dir="C:\Program Files\Java\javafx-sdk-11.0.2\lib">
+				<filename name="javafx.controls.jar"/>
+			</fileset>
+		</copy>
+		<copy todir="externalLibs">
+			<fileset dir="C:\Users\Stevoski\Documents\steve\Jars">
+				<filename name="jdt-compiler-3.1.1.jar"/>
+			</fileset>
+		</copy>
+		<copy todir="externalLibs">
+			<fileset dir="C:\Users\Stevoski\Documents\steve\Jars">
+				<filename name="javafx-graphics-11.0.2.jar"/>
+			</fileset>
+		</copy>
+		<copy todir="externalLibs">
+			<fileset dir="C:\Users\Stevoski\Documents\steve\Jars">
+				<filename name="javafx-controls-11.0.2-linux.jar"/>
+			</fileset>
+		</copy>
+		<copy todir="externalLibs">
+			<fileset dir="C:\Program Files\Java\javafx-sdk-11.0.2\lib">
+				<filename name="javafx.media.jar"/>
+			</fileset>
+		</copy>
+		<copy todir="externalLibs">
+			<fileset dir="C:\Program Files\Java\javafx-sdk-11.0.2\lib">
+				<filename name="javafx.base.jar"/>
+			</fileset>
+		</copy>
+		<copy todir="externalLibs">
+			<fileset dir="C:\Users\Stevoski\Documents\steve\Jars">
+				<filename name="commons-digester-2.1.jar"/>
+			</fileset>
+		</copy>
+		<copy todir="externalLibs">
+			<fileset dir="C:\Users\Stevoski\Documents\steve\Jars">
+				<filename name="iText-2.1.7.jar"/>
+			</fileset>
+		</copy>
+		<copy todir="externalLibs">
+			<fileset dir="C:\Users\Stevoski\Documents\steve\Jars">
+				<filename name="commons-beanutils-1.8.0.jar"/>
+			</fileset>
+		</copy>
+	
+		<mkdir dir="project" />
+		<copy todir="project">
+			<fileset dir="C:\Users\Stevoski\eclipse-workspace\inventoryManagement">
+				<include name="src/**" />
+			</fileset>
+		</copy>
+	
+		<mkdir dir="projectRefs" />
+	</target>
+	<target name='do-compile'>
+		<delete dir="build" />
+		<mkdir dir="build/src" />
+		<mkdir dir="build/libs" />
+		<mkdir dir="build/classes" />
+	
+		<!-- Copy project-libs references -->
+		<copy todir="build/libs">
+			<fileset dir="externalLibs">
+				<include name="javafx-swt.jar"/>
+				<include name="javafx.fxml.jar"/>
+				<include name="jfreechart-1.0.12.jar"/>
+				<include name="commons-digester-2.1.jar"/>
+				<include name="commons-codec-1.15.jar"/>
+				<include name="javafx-controls-11.0.2.jar"/>
+				<include name="jcalendar-1.4.jar"/>
+				<include name="commons-collections-2.1.1.jar"/>
+				<include name="jasperreports-fonts-4.7.0.jar"/>
+				<include name="javafx-media-11.0.2.jar"/>
+				<include name="javafx.controls.jar"/>
+				<include name="javafx.media.jar"/>
+				<include name="iText-2.1.7.jar"/>
+				<include name="javafx-base-11.0.2-linux.jar"/>
+				<include name="jfoenix-9.0.8.jar"/>
+				<include name="javafx.swing.jar"/>
+				<include name="groovy-all-1.7.5.jar"/>
+				<include name="commons-logging-1.1.1.jar"/>
+				<include name="javafx.graphics.jar"/>
+				<include name="javafx-base-11.0.2.jar"/>
+				<include name="jasperreports-javaflow-4.7.0.jar"/>
+				<include name="mysql-connector-java-8.0.11.jar"/>
+				<include name="src.zip"/>
+				<include name="jasperreports-applet-4.7.0.jar"/>
+				<include name="javafx.web.jar"/>
+				<include name="controlsfx-11.0.3.jar"/>
+				<include name="miglayout15-swing.jar"/>
+				<include name="jgoodies-forms-1.8.0.jar"/>
+				<include name="javafx-graphics-11.0.2.jar"/>
+				<include name="javafx-media-11.0.2-linux.jar"/>
+				<include name="jasperreports-4.7.0.jar"/>
+				<include name="jdt-compiler-3.1.1.jar"/>
+				<include name="javafx-graphics-11.0.2-linux.jar"/>
+				<include name="javafx-controls-11.0.2-linux.jar"/>
+				<include name="jgoodies-forms-1.8.0-sources.jar"/>
+				<include name="javafx.base.jar"/>
+				<include name="commons-beanutils-1.8.0.jar"/>
+				<include name="jcommon-1.0.15.jar"/>
+			</fileset>
+		</copy>
+	
+		<!-- Copy project references -->
+	
+		<!-- Copy project sources itself -->
+		<copy todir="build/src">
+			<fileset dir="project/src">
+				<include name="**/*"/>
+			</fileset>
+		</copy>
+	
+		<javac includeantruntime="false" source="11" target="11" srcdir="build/src" destdir="build/classes" encoding="Cp1252">
+			<classpath>
+				<fileset dir="build/libs">
+					<include name="*"/>
+				</fileset>
+			</classpath>
+		</javac>
+	
+		<!-- Copy over none Java-Files -->
+		<copy todir="build/classes">
+		<fileset dir="project/src">
+			<exclude name="**/*.java"/>
+		</fileset>
+		</copy>
+	
+	
+	</target>
+	<target name="do-deploy" depends="setup-staging-area, do-compile, init-fx-tasks">
+		<delete file="dist"/>
+		<delete file="deploy" />
+	
+		<mkdir dir="dist" />
+		<mkdir dir="dist/libs" />
+	
+		<copy todir="dist/libs">
+			<fileset dir="externalLibs">
+				<include name="*" />
+			</fileset>
+		</copy>
+	
+	
+		<fx:resources id="appRes">
+			<fx:fileset dir="dist" includes="inventoryManagement.jar"/>
+			<fx:fileset dir="dist" includes="libs/*"/>
+		</fx:resources>
+	
+		<fx:application id="fxApplication"
+			name="Hotelier"
+			mainClass="inventoryManager.Main"
+			version="1.0"
+		/>
+	
+		<mkdir dir="build/classes/META-INF" />
+	
+	
+	
+		<fx:jar destfile="dist/inventoryManagement.jar">
+			<fx:application refid="fxApplication"/>
+			<fileset dir="build/classes">
+			</fileset>
+			<fx:resources refid="appRes"/>
+	
+			<manifest>
+				<attribute name="Implementation-Vendor" value="StevoskiLabs.com"/>
+				<attribute name="Implementation-Title" value="Hotelier"/>
+				<attribute name="Implementation-Version" value="1.0"/>
+				<attribute name="JavaFX-Feature-Proxy" value="None"/>
+			</manifest>
+		</fx:jar>
+	
+	
+	
+	
+	</target>
+</project>
